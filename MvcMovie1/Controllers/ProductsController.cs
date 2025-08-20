@@ -25,7 +25,7 @@ namespace MvcMovie1.Controllers
         // GET: Products
         public async Task<IActionResult> Index()
         {
-            _logger.LogInformation("Home page visited at {DT}",
+            _logger.LogInformation("Product App page visited at {DT}",
             DateTime.UtcNow.ToLongTimeString());
             return View(await _context.Product.ToListAsync());
         }
